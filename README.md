@@ -1,5 +1,5 @@
 commit
-second commit
+second committ
 
 # Applied JavaScript Sprint Challenge
 
