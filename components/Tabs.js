@@ -10,7 +10,7 @@
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
 
-const tabs = document.querySelector("div.topics");
+const tabs = document.querySelector(".topics");
 
 const getPromise = () => {
   axios

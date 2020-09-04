@@ -30,11 +30,26 @@ const getPromise = () => {
     .get("https://lambda-times-api.herokuapp.com/articles")
 
     .then((res) => {
-      console.log(res);
-      const entries = Object.entries;
-      console.log(entries);
-      //   const resData = createCard(res.data.articles);
-      //   cardsContainer.appendChild(resData);
+      //console.log(res);
+      res.data.articles.javascript.forEach((item) => {
+        cardsContainer.appendChild(createCard(item));
+      });
+      const bootstrapArt = res.data.articles.bootstrap;
+      bootstrapArt.forEach((item) => {
+        cardsContainer.appendChild(createCard(item));
+      });
+      res.data.articles.bootstrap.forEach((item) => {
+        cardsContainer.appendChild(createCard(item));
+      });
+      res.data.articles.technology.forEach((item) => {
+        cardsContainer.appendChild(createCard(item));
+      });
+      res.data.articles.jquery.forEach((item) => {
+        cardsContainer.appendChild(createCard(item));
+      });
+      res.data.articles.node.forEach((item) => {
+        cardsContainer.appendChild(createCard(item));
+      });
     })
     .catch((error) => {
       console.log("error:", error);
@@ -58,8 +73,8 @@ function createCard(objects) {
   card.appendChild(headline);
   card.appendChild(author);
   author.appendChild(container);
-  container.appendChild(img);
   author.appendChild(name);
+  container.appendChild(img);
 
   //Text
   headline.textContent = objects.headline;
