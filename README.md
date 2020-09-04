@@ -1,5 +1,5 @@
 commit
-second committ
+second commit
 
 # Applied JavaScript Sprint Challenge
 
@@ -30,14 +30,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is the DOM?
+   The DOM stands for "Document Object Model" and it is an object repersentation of the HTML elements of a webpage. It is basically an API to a page, and is dynamic.
 
 2. What is an event?
+   Events are the way users interact with the page. These events can happen with a keypress, mouseclick, as the page loads, and more.
 
 3. What is an event listener?
+   Event listeners is a method that attaches an event handler to an element and fires as callback when that event occurs.
 
 4. Why would we convert a NodeList into an Array?
+   Converting a NodeList into an array is important because you are unable to use array methods with NodeLists. You convert them into an array with "Array.from" and then you are able to use array methods.
 
 5. What is a component?
+   A component is re-usable code. It is a part or element of a larger whole. Components are made up of html,css, and javascript.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
